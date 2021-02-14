@@ -240,7 +240,7 @@ VenstarThermostat.prototype.APISendControl = function(opts, callback) {
   }
 
   if (opts.targettemp) {
-    opts.targettemp = this.convertctof(opts.targettemp);
+    opts.targettemp = Math.round(this.convertctof(opts.targettemp));
     switch(opts.state || this.targetHeatingCoolingState){
       case Characteristic.TargetHeatingCoolingState.HEAT:
         data.heattemp = opts.targettemp
