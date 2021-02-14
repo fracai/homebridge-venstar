@@ -1,7 +1,7 @@
 {
   "name": "homebridge-venstar",
-  "version": "0.1.1",
-  "description": "Venstar thermostat plugin for homebridge: https://github.com/nfarina/homebridge",
+  "version": "0.1.1.1",
+  "description": "Venstar thermostat plugin for homebridge: https://github.com/homebridge/homebridge",
   "license": "MIT",
   "keywords": [
     "homebridge-plugin"
@@ -13,7 +13,7 @@
   "author": "Brian Knobbs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PacketPerception/homebridge-venstar.git"
+    "url": "git+https://github.com/fracai/homebridge-venstar.git"
   },
   "dependencies": {
     "debug": "^2.6.3",
@@ -24,9 +24,9 @@
     "underscore": "^1.8.3"
   },
   "bugs": {
-    "url": "https://github.com/PacketPerception/homebridge-venstar/issues"
+    "url": "https://github.com/fracai/homebridge-venstar/issues"
   },
-  "homepage": "https://github.com/PacketPerception/homebridge-venstar#readme",
+  "homepage": "https://github.com/fracai/homebridge-venstar#readme",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
