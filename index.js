@@ -16,7 +16,7 @@
             "auth": { "user": "username", "pass": "password" },
 
             "thermostats": [
-              { 
+              {
                 "name": "Home",
                 "uri": "https://192.168.1.10",
                 // auth requires https uri if enabled
@@ -60,7 +60,7 @@ function VenstarPlatform(log, config, api) {
 	this.log = log;
   this.config = config
   this.name = (config.name==undefined) ? "Venstar" : config.name;
-  
+
   this.auth = config.auth || null;
   this.pin = config.pin || null;
 }
@@ -197,7 +197,7 @@ VenstarThermostat.prototype.APIGetInfo = function(callback) {
     });
     return deferred.promise;
   }
-  
+
   getInfo(that.cache).timeout(30000).then(function(info){
     that.debug('Updating vars and releasing sem');
 
